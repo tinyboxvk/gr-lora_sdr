@@ -56,13 +56,13 @@ J. Tapparel, O. Afisiadis, P. Mayoraz, A. Balatsoukas-Stimming and A. Burg, "An 
 If you find this implementation useful for your project, please consider citing the aforementioned paper.
 
 ## Prerequisites
-- Gnuradio 3.10
-- python 3
+- gnuradio 3.10
+- python3
 - cmake
 - libvolk
 - boost
-- UHD
-- gcc > 9.3.0
+- uhd
+- gcc
 - gxx
 - pybind11
 
@@ -76,7 +76,7 @@ The out of tree module gr-lora_sdr can be installed from source or directly as a
 	```
 - Go to the cloned repository
 	```sh
-	cd gr-lora_sdr/
+	cd gr-lora_sdr
 	```
 - A functioning environment with all dependencies can be installed with conda or you can install them individually and skip to the next step.
 	You can follow this [tutorial](https://www.how2shout.com/how-to/install-anaconda-wsl-windows-10-ubuntu-linux-app.html) or simply following:
@@ -92,7 +92,7 @@ The out of tree module gr-lora_sdr can be installed from source or directly as a
 		```sh
 		source ~/.bashrc
 		```
-	- Now copy our environment to install all the dependencies of the module automatically. Note that it will take quite some time (~20 min).
+	- Now copy our environment to install all the dependencies of the module automatically
 		```sh
 		conda env create -f environment.yml 
 		```
@@ -107,15 +107,11 @@ The out of tree module gr-lora_sdr can be installed from source or directly as a
 	```
 - Run the main CMakeLists.txt
 	```sh
-	cmake .. -DCMAKE_INSTALL_PREFIX=<your prefix> # default to usr/local, CONDA_PREFIX or PYBOMB_PREFIX if no install prefix selected here
+	cmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX
 	```
 - Finally compile the custom GNU Radio blocks composing the LoRa transceiver. Replacing \<X> with the number of core you want to use to speed up the compilation.
 	```sh
-	(sudo) make install -j<X>
-	```
-- if you installed as sudo run
-	```sh
-	sudo ldconfig 
+	make install -j<X>
 	```
 - Now you should be able to run some codes. For example, open the GNU Radio Companion user interface and check if the blocks of gr-lora_sdr are available on the blocks list (e.g. under LoRa_TX).
 	```sh
