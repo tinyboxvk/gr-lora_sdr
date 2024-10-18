@@ -14,7 +14,7 @@ set(CMAKE_BUILD_TYPE "Release" CACHE STRING "")
 ########################################################################
 # Project setup
 ########################################################################
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.16)
 project(gr-lora_sdr CXX C)
 enable_testing()
 
@@ -140,13 +140,13 @@ add_custom_target(uninstall
 add_subdirectory(include/gnuradio/lora_sdr)
 add_subdirectory(lib)
 add_subdirectory(apps)
+add_subdirectory(examples)
 add_subdirectory(docs)
 # NOTE: manually update below to use GRC to generate C++ flowgraphs w/o python
 if(ENABLE_PYTHON)
   message(STATUS "PYTHON and GRC components are enabled")
   add_subdirectory(python/lora_sdr)
   add_subdirectory(grc)
-  add_subdirectory(examples)
 else(ENABLE_PYTHON)
   message(STATUS "PYTHON and GRC components are disabled")
 endif(ENABLE_PYTHON)
