@@ -72,7 +72,7 @@ The out of tree module gr-lora_sdr can be installed from source or directly as a
 ### From source
 - Clone this repository
 	```sh
-	git clone https://github.com/tapparelj/gr-lora_sdr.git
+	git clone https://github.com/tinyboxvk/gr-lora_sdr.git
 	```
 - Go to the cloned repository
 	```sh
