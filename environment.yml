@@ -15,3 +15,5 @@ dependencies:
   - python>=3.12
   - uhd
   - volk
+  - pip:
+    - pygccxml
