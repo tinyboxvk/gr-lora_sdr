@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - boost-cpp>=1.82.0
-  - cmake>=3.26
+  - cmake>=3.26,<3.27
   - doxygen
   - gcc>=11.2
   - gnuradio>=3.10
@@ -15,4 +15,3 @@ dependencies:
   - python>=3.12
   - uhd
   - volk
- 
