@@ -109,9 +109,9 @@ The out of tree module gr-lora_sdr can be installed from source or directly as a
 	```sh
 	cmake .. -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX
 	```
-- Finally compile the custom GNU Radio blocks composing the LoRa transceiver. Replacing \<X> with the number of core you want to use to speed up the compilation.
+- Finally compile the custom GNU Radio blocks composing the LoRa transceiver
 	```sh
-	make install -j<X>
+	make install -j$(nproc)
 	```
 - Now you should be able to run some codes. For example, open the GNU Radio Companion user interface and check if the blocks of gr-lora_sdr are available on the blocks list (e.g. under LoRa_TX).
 	```sh
