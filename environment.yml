@@ -11,7 +11,6 @@ dependencies:
   - gxx_linux-64
   - make>=4.2
   - pkg-config
-  - pthread-stubs
   - pybind11
   - python>=3.12
   - uhd
