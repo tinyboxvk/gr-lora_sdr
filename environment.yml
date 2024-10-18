@@ -5,7 +5,7 @@ channels:
 dependencies:
   - boost-cpp>=1.82.0
   - cmake>=3.26
-  - make
+  - make>=4.2
   - cxx-compiler
   - gcc>=11.2
   - gnuradio>=3.10
