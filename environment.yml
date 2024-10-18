@@ -1,4 +1,4 @@
-name: gr310
+name: gr310test
 channels:
   - conda-forge
   - defaults
