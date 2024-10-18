@@ -5,11 +5,14 @@ channels:
 dependencies:
   - boost-cpp>=1.82.0
   - cmake>=3.26
-  - make>=4.2
+  - doxygen
   - gcc>=11.2
   - gnuradio>=3.10
   - gxx_linux-64
+  - make>=4.2
+  - pkg-config
   - pybind11
   - python>=3.12
   - uhd
   - volk
+ 
