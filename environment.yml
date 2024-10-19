@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - boost-cpp>=1.82.0
+  - boost-cpp>=1.82
   - cmake>=3.22,<3.27
   - doxygen
   - gcc>=11.2
