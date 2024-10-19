@@ -10,8 +10,6 @@ dependencies:
   - gnuradio>=3.10
   - gxx_linux-64
   - make>=4.2
-  - ninja
-  - numpy>=2.0
   - pkg-config
   - pybind11
   - python>=3.12
