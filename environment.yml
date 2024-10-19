@@ -4,12 +4,14 @@ channels:
   - defaults
 dependencies:
   - boost-cpp>=1.82.0
-  - cmake>=3.26,<3.27
+  - cmake>=3.22,<3.27
   - doxygen
   - gcc>=11.2
   - gnuradio>=3.10
   - gxx_linux-64
   - make>=4.2
+  - ninja
+  - numpy>=2.0
   - pkg-config
   - pybind11
   - python>=3.12
